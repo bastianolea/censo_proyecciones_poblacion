@@ -49,7 +49,7 @@ ui <- fluidPage(
             titlePanel(
                 h1("Censo de población: proyecciones", 
                    style = glue("font-weight: bold; color: {color_destacado}")),
-                windowTitle = "Millonarios de Chile"),
+                windowTitle = "Proyecciones Censo"),
             
             div(style = "margin-bottom: 8px; font-size: 80%;",
                 
@@ -134,7 +134,7 @@ ui <- fluidPage(
     
     # pirámides ----
     fluidRow(
-        column(6,
+        column(12,
                h2("Pirámide poblacional"),
                p("Vuelve a elegir una comuna para poder visualizar su pirámide poblacional, que corresponde a la distribución de la población de dicha comuna, pero separada en grupos de edad y género."),
                
