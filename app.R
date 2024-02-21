@@ -6,72 +6,140 @@ library(shinycssloaders)
 library(ggplot2)
 library(gt)
 library(gtExtras)
+library(thematic)
+library(bslib)
+library(glue)
+library(colorspace)
+
+color_principal = "#365c8d"
+color_destacado = "#3a87c8"
+color_fondo = "#FFFFFF"
+color_negativo = "#e5084b"
+color_masculino = "#770072" |> lighten(0.2)
+color_femenino = "#3a1582" |> lighten(0.2)
+
 
 proyecciones <- arrow::read_parquet("censo_proyecciones_año.parquet")
 
 proyecciones_edad <- arrow::read_parquet("censo_proyecciones_año_edad_genero.parquet")
 
+options(spinner.type = 4, spinner.color = color_destacado)
+
+#tema automático
+thematic_shiny(font = "auto", bg = color_fondo, fg = color_principal, accent = color_destacado)
+
+css <- function(text) {
+    tags$style(glue(text, .open = "{{", .close = "}}"))
+}
+
 ui <- fluidPage(
+    theme = bs_theme(
+        bg = color_fondo, fg = color_principal, primary = color_destacado
+    ),
+    
+    # css ----
+    css(".explicacion {
+      font-size: 80%; opacity: 1; line-height: 1.3;
+      }"),
     
     fluidRow(
-        column(12,
-               hr(),
-               p("Elija una o más regiones para luego elegir una o varias comunas que serán incluidas en el gráfico."),
-               pickerInput("regiones",
-                           label = h4("Regiones"),
-                           width = "100%",
-                           multiple = TRUE,
-                           choices = NULL,
-                           options = list(width = FALSE,
-                                          noneSelectedText = "Sin selección")
-               )
-        ),
-        column(12,  
-               div(   
-                   pickerInput("comunas",
-                               label = h4("Comunas"),
-                               width = "100%",
-                               multiple = TRUE,
-                               choices = NULL,
-                               options = list(maxOptions = 8, 
-                                              maxOptionsText = "Máximo 8",
-                                              noneSelectedText = "Sin selección",
-                                              width = FALSE)
+        #título ----
+        div(style = "padding-top: 12px; padding-bottom: 20px;",
+            
+            titlePanel(
+                h1("Censo de población: proyecciones", 
+                   style = glue("font-weight: bold; color: {color_destacado}")),
+                windowTitle = "Millonarios de Chile"),
+            
+            div(style = "margin-bottom: 8px; font-size: 80%;",
+                
+                markdown("Visualizador de datos oficiales de proyecciones poblacionales realizadas por el [Instituto Nacional de Estadísticas](https://www.ine.gob.cl) de Chile"),
+                
+                em(tags$a("Bastián Olea Herrera", 
+                          href = "http://bastian.olea.biz",
+                          target = "_blank"))
+            ),
+            
+            div(style = "padding-top: 18px;",
+                markdown("Aplicación web que visualiza los datos oficiales del [Instituto Nacional de Estadísticas](https://www.ine.gob.cl) de Chile sobre [proyecciones de población](https://www.ine.gob.cl/estadisticas/sociales/demografia-y-vitales/proyecciones-de-poblacion); es decir, estimaciones del crecimiento poblacional hacia el futuro, a partir de los datos obtenidos en los censos oficiales.")
+            ),
+            hr()
+        )
+    ),
+    
+    fluidRow(
+        column(12, style = "margin-top: -20px;",
+               
+               # evolución ----
+               fluidRow(
+                   column(7, 
+                          h2("Evolución de la población comunal"),
+                          p("En este gráfico puedes analizar los cambios poblacionales proyectados para las comunas que elijas. Los puntos indican mediciones de población realizadas por censos nacionales de población y vivienda, mientras que el resto de las líneas representan proyecciones de dichas mediciones."),
+                          
+                          p(class = "explicacion",
+                            "Selecciona una o más regiones para luego elegir una o varias comunas que serán incluidas en el gráfico."),
+                          
+                          pickerInput("regiones",
+                                      label = h4("Regiones"),
+                                      width = "100%",
+                                      multiple = TRUE,
+                                      choices = NULL,
+                                      options = list(width = FALSE,
+                                                     noneSelectedText = "Sin selección")
+                          ),
+                          
+                          pickerInput("comunas",
+                                      label = h4("Comunas"),
+                                      width = "100%",
+                                      multiple = TRUE,
+                                      choices = NULL,
+                                      options = list(maxOptions = 8, 
+                                                     maxOptionsText = "Máximo 8",
+                                                     noneSelectedText = "Sin selección",
+                                                     width = FALSE)
+                          ),
+                          
+                          div(style = "overflow-x: scroll;",
+                              plotOutput("grafico_proyeccion", width = "700px") |> withSpinner()
+                          ),
+                          br()
+                   ),
+                   
+                   # comparar años ----
+                   column(5,
+                          
+                          h2("Cambios en la población comunal"),
+                          p("Esta tabla detalla una lista de las comunas seleccionadas, con su población correspondiente para los años que elijas, junto a el cambio porcentual entre ambas fechas."),
+                          
+                          p(class = "explicacion",
+                            "Selecciona dos años para ajustar la comparación entre poblaciones."),
+                          
+                          sliderInput("comparar_años", 
+                                      label = h4("Seleccione dos años a comparar"), 
+                                      min = min(proyecciones_edad$año), max = max(proyecciones_edad$año),
+                                      value = c(2002, 2023), ticks = T, sep = "", width = "100%"),
+                          
+                          div(style = "margin-top: 20px;",
+                              gt_output("comparacion_años") |> withSpinner()
+                          )
                    )
                ),
-               # )
+               
                hr()
-               
         )
     ),
     
-    # evolución ----
-    fluidRow(
-        column(12,
-               plotOutput("grafico_proyeccion") |> withSpinner()
-        )
-    ),
     
-    # comparar años ----
-    fluidRow(
-        column(12,
-               p("Seleccione dos años"),
-               
-               sliderInput("comparar_años", label = h4("Años"), 
-                           min = min(proyecciones_edad$año), max = max(proyecciones_edad$año),
-                           value = c(2002, 2023), ticks = T, sep = "", width = "100%"),
-               
-               gt_output("comparacion_años")
-        )
-    ),
-        
-               
     
     
     # pirámides ----
     fluidRow(
-        column(12,
-               h2("Pirámides"),
+        column(6,
+               h2("Pirámide poblacional"),
+               p("Vuelve a elegir una comuna para poder visualizar su pirámide poblacional, que corresponde a la distribución de la población de dicha comuna, pero separada en grupos de edad y género."),
+               
+               p(class = "explicacion",
+                 "Elige una región, luego una comuna, para posteriormente cambiar los años para ver las diferencias en la pirámide poblacional de la comuna elegida."),
                
                pickerInput("regiones_piramide",
                            label = h4("Regiones"),
@@ -83,7 +151,7 @@ ui <- fluidPage(
                ),
                
                pickerInput("comuna_piramide",
-                           label = h4("Comunas"),
+                           label = h4("Comuna"),
                            width = "100%",
                            multiple = F,
                            choices = NULL,
@@ -99,7 +167,30 @@ ui <- fluidPage(
     
     fluidRow(
         column(12,
-               plotOutput("grafico_piramide") |> withSpinner()
+               div(style = "overflow-x: scroll;",
+                   plotOutput("grafico_piramide", width = "700px") |> withSpinner()
+               )
+        )
+    ),
+    
+    
+    ## firma ----
+    fluidRow(
+        column(12, style = "opacity: 0.5; font-size: 80%;",
+               hr(),
+               
+               p("Diseñado y programado por",
+                 tags$a("Bastián Olea Herrera.", target = "_blank", href = "https://bastian.olea.biz")),
+               p("Puedes explorar mis otras",
+                 tags$a("aplicaciones interactivas sobre datos sociales aquí.",
+                        href = "https://bastianolea.github.io/shiny_apps/", target = "_blank")
+               ),
+               p("Código de fuente de esta app y del procesamiento de los datos",
+                 tags$a("disponible en GitHub.", target = "_blank", href = "https://github.com/bastianolea/censo_proyecciones_poblacion")
+               ),
+               
+               div(style = "height: 40px")
+               
         )
     )
     
@@ -223,25 +314,33 @@ server <- function(input, output, session) {
                        alpha = proyeccion, size = año_censal,
                        group = comuna)) +
             # figuras
-            geom_vline(xintercept = 2024) +
+            geom_vline(xintercept = 2024, linewidth = 1, color = color_destacado, alpha = 0.4) +
             geom_line(aes(alpha = proyeccion_b), linewidth = 1.2, show.legend = F) +
             geom_point() +
             # escalas
             scale_alpha_manual(values = c("pasado" = 1, "futuro" = 0.3)) +
-            scale_size_manual(values = c("proyección" = 0, "censo" = 6), guide = "none") +
+            scale_size_manual(values = c("proyección" = NULL, "censo" = 4), guide = "none") +
             scale_x_continuous(breaks = c(2002, seq(2005, 2035, by = 5), 2017)) +
             scale_y_continuous(labels = function(x) paste(x/1000, "mil")) +
             # temas
             theme_minimal() +
             theme(legend.position = "right",
                   axis.title.x = element_blank(),
-                  panel.grid.minor.x = element_blank()) +
+                  axis.title.y = element_text(color = color_destacado),
+                  axis.text = element_text(size = 8),
+                  axis.text.x = element_text(size = 8, angle = -90, vjust = 0.5),
+                  panel.grid.minor.x = element_blank(),
+                  legend.text.align = 0,
+                  legend.title = element_text(color = color_destacado)
+            ) +
             # etiquetas
             labs(y = "Población residente proyectada",
-                 caption = "fuente: INE", alpha = "Temporalidad", 
-                 color = "Comunas", fill = "Comunas")
+                 alpha = "Temporalidad", 
+                 color = "Comunas", fill = "Comunas") +
+            guides(colour = guide_legend(override.aes = list(size = 4)),
+                   alpha = guide_legend(override.aes = list(size = 4)))
         
-    })
+    }, res = 100)
     
     ## grafico piramide ----
     output$grafico_piramide <- renderPlot({
@@ -262,13 +361,34 @@ server <- function(input, output, session) {
             scale_x_continuous(labels = ~case_when(.x == 0 ~ "",
                                                    abs(.x) < 1000 ~ as.character(abs(.x)),
                                                    abs(.x) >= 1000 ~ paste(abs(.x)/1000, "mil")),
-                               limits = ~c(-max(abs(.x)), max(abs(.x)))
+                               limits = ~c(-max(abs(.x)), max(abs(.x))),
+                               expand = expansion(c(0.1, 0.1))
+            ) +
+            geom_text(aes(
+                label = ifelse(género == "masculino",
+                               paste(" ", format(abs(población), big.mark = ".", trim = T)),
+                               paste(format(abs(población), big.mark = ".", trim = T), " ")
+                ),
+                hjust = ifelse(género == "masculino", 0, 1)
+            ),
+            size = 2.4
             ) +
             geom_col(width = 0.5) +
+            geom_vline(xintercept = 0, linewidth = 1, color = "white") +
             theme_minimal() +
-            theme(legend.position = "top") +
-            labs(y = "Categorías de edad", x = "Población por grupo de edad y género")
-    })
+            scale_fill_manual(values = c("masculino" = color_masculino, "femenino" = color_femenino), 
+                              aesthetics = c("fill", "color")) +
+            theme(legend.position = "bottom",
+                  axis.title = element_text(color = color_destacado),
+                  axis.text = element_text(size = 8),
+                  panel.grid.minor.x = element_blank(),
+                  legend.text.align = 0,
+                  legend.title = element_text(color = color_destacado),
+                  legend.text = element_text(margin = margin(l = -3, r = 5))
+            ) +
+            labs(y = "Categorías de edad", x = "Población por grupo de edad y género",
+                 fill = "Género", color = "Género")
+    }, res = 100)
     
     # tablas ----
     
@@ -296,7 +416,7 @@ server <- function(input, output, session) {
             relocate(flecha, .before = cambio) |> 
             #tabla
             gt() |> 
-            gt_fa_column(flecha, palette = c("angles-up" = "red", "arrow-up" = "black", "arrow-down" = "red")) |> 
+            gt_fa_column(flecha, palette = c("angles-up" = color_negativo, "arrow-up" = color_destacado, "arrow-down" = color_negativo)) |> 
             fmt_percent(
                 columns = cambio,
                 decimals = 1,
@@ -308,7 +428,8 @@ server <- function(input, output, session) {
                 comuna = "Comuna",
                 flecha = ""
             ) |> 
-            tab_style(style = cell_text(weight = "bold"), locations = cells_column_labels())
+            tab_style(style = cell_text(weight = "bold"), locations = cells_column_labels()) |> 
+            tab_options(table.font.color = color_principal)
     })
 }
 
