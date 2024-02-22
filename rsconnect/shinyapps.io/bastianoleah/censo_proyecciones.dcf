@@ -5,8 +5,9 @@ account: bastianoleah
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 11284541
-bundleId: 8278829
+bundleId: 8278883
 url: https://bastianoleah.shinyapps.io/censo_proyecciones/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: otros/logo.psd|otros/pantallazo_censo_proyecciones.jpg|README.md
