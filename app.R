@@ -15,13 +15,13 @@ color_principal = "#365c8d"
 color_destacado = "#3a87c8"
 color_fondo = "#FFFFFF"
 color_negativo = "#e5084b"
-color_masculino = "#770072" |> lighten(0.2)
-color_femenino = "#3a1582" |> lighten(0.2)
+color_masculino = "#964191" #"#770072" |> lighten(0.2)
+color_femenino = "#5B4898" #"#3a1582" |> lighten(0.2)
 
 
-proyecciones <- arrow::read_parquet("censo_proyecciones_año.parquet")
+proyecciones <- arrow::read_parquet("resultados/censo_proyecciones_año.parquet")
 
-proyecciones_edad <- arrow::read_parquet("censo_proyecciones_año_edad_genero.parquet")
+proyecciones_edad <- arrow::read_parquet("resultados/censo_proyecciones_año_edad_genero.parquet")
 
 options(spinner.type = 4, spinner.color = color_destacado)
 
@@ -90,9 +90,10 @@ ui <- fluidPage(
                                                      noneSelectedText = "Sin selección")
                           ),
                           
-                          div(style = "overflow-x: scroll;",
-                              plotOutput("grafico_proyeccion_regiones", width = "700px") |> withSpinner()
-                          ),
+                          # div(style = "overflow-x: scroll;",
+                          #     plotOutput("grafico_proyeccion_regiones", width = "700px") |> withSpinner()
+                          # ),
+                          plotOutput("grafico_proyeccion_regiones") |> withSpinner(),
                           br()
                    ),
                    
@@ -137,15 +138,16 @@ ui <- fluidPage(
                                       width = "100%",
                                       multiple = TRUE,
                                       choices = NULL,
-                                      options = list(maxOptions = 8, 
+                                      options = list(maxOptions = 10, 
                                                      maxOptionsText = "Máximo 8",
                                                      noneSelectedText = "Sin selección",
                                                      width = FALSE)
                           ),
                           
-                          div(style = "overflow-x: scroll;",
-                              plotOutput("grafico_proyeccion_comunas", width = "700px") |> withSpinner()
-                          ),
+                          # div(style = "overflow-x: scroll;",
+                          #     plotOutput("grafico_proyeccion_comunas", width = "700px") |> withSpinner()
+                          # ),
+                          plotOutput("grafico_proyeccion_comunas") |> withSpinner(),
                           br()
                    ),
                    
@@ -158,7 +160,7 @@ ui <- fluidPage(
                           p(class = "explicacion",
                             "Selecciona dos años para ajustar la comparación entre poblaciones."),
                           
-                          sliderInput("comparar_años", 
+                          sliderInput("comparar_años_comunas", 
                                       label = h4("Seleccione dos años a comparar"), 
                                       min = min(proyecciones_edad$año), max = max(proyecciones_edad$año),
                                       value = c(2002, 2023), ticks = T, sep = "", width = "100%"),
@@ -236,7 +238,7 @@ ui <- fluidPage(
     
     ## firma ----
     fluidRow(
-        column(12, style = "opacity: 0.6; font-size: 80%;",
+        column(12, style = "opacity: 1; font-size: 80%;",
                hr(),
                
                markdown("Diseñado y programado por [Bastián Olea Herrera.](https://bastian.olea.biz)"),
@@ -427,8 +429,15 @@ server <- function(input, output, session) {
             # escalas
             scale_alpha_manual(values = c("pasado" = 1, "futuro" = 0.3)) +
             scale_size_manual(values = c("proyección" = NULL, "censo" = 4), guide = "none") +
-            scale_x_continuous(breaks = c(2002, seq(2005, 2035, by = 5), 2017)) +
-            scale_y_continuous(labels = function(x) paste(x/1000, "mil")) +
+            scale_x_continuous(breaks = c(2002, seq(2005, 2035, by = 5), 2017),
+                               expand = expansion(c(0.01, 0))) +
+            scale_y_continuous(labels = function(x) {
+                if (max(x, na.rm = T)/1000 >= 1000) {
+                    paste(x/1000000, "\nmill.")
+                } else {
+                    paste0(x/1000, "\nmil")
+                }
+            }) +
             # temas
             theme_minimal() +
             theme(legend.position = "right",
@@ -438,13 +447,15 @@ server <- function(input, output, session) {
                   axis.text.x = element_text(size = 8, angle = -90, vjust = 0.5),
                   panel.grid.minor.x = element_blank(),
                   legend.text.align = 0,
-                  legend.title = element_text(color = color_destacado)
+                  legend.text = element_text(margin = margin(l = 0)),
+                  legend.title = element_text(color = color_destacado),
+                  legend.margin = margin(l = -4)
             ) +
             # etiquetas
             labs(y = "Población residente proyectada",
                  alpha = "Temporalidad", 
                  color = "Regiones", fill = "Regiones") +
-            guides(colour = guide_legend(override.aes = list(size = 4), order = 1),
+            guides(colour = guide_legend(override.aes = list(size = 3), order = 1),
                    alpha = F) #guide_legend(override.aes = list(size = 4)))
         # browser()
     }, res = 100)
@@ -467,8 +478,9 @@ server <- function(input, output, session) {
             # escalas
             scale_alpha_manual(values = c("pasado" = 1, "futuro" = 0.3)) +
             scale_size_manual(values = c("proyección" = NULL, "censo" = 4), guide = "none") +
-            scale_x_continuous(breaks = c(2002, seq(2005, 2035, by = 5), 2017)) +
-            scale_y_continuous(labels = function(x) paste(x/1000, "mil")) +
+            scale_x_continuous(breaks = c(2002, seq(2005, 2035, by = 5), 2017),
+                               expand = expansion(c(0.01, 0))) +
+            scale_y_continuous(labels = function(x) paste0(x/1000, "\nmil")) +
             # temas
             theme_minimal() +
             theme(legend.position = "right",
@@ -478,13 +490,15 @@ server <- function(input, output, session) {
                   axis.text.x = element_text(size = 8, angle = -90, vjust = 0.5),
                   panel.grid.minor.x = element_blank(),
                   legend.text.align = 0,
-                  legend.title = element_text(color = color_destacado)
+                  legend.text = element_text(margin = margin(l = 0)),
+                  legend.title = element_text(color = color_destacado),
+                  legend.margin = margin(l = -4)
             ) +
             # etiquetas
             labs(y = "Población residente proyectada",
                  alpha = "Temporalidad", 
                  color = "Comunas", fill = "Comunas") +
-            guides(colour = guide_legend(override.aes = list(size = 4), order = 1),
+            guides(colour = guide_legend(override.aes = list(size = 3), order = 1),
                    alpha = F, size = F) #guide_legend(override.aes = list(size = 4)))
         
     }, res = 100)
@@ -526,7 +540,7 @@ server <- function(input, output, session) {
                   panel.grid.minor.x = element_blank(),
                   legend.text.align = 0,
                   legend.title = element_text(color = color_destacado),
-                  legend.text = element_text(margin = margin(l = -3, r = 5))
+                  legend.text = element_text(margin = margin(l = 4, r = 5))
             ) +
             labs(y = "Categorías de edad", x = "Población por grupo de edad y género",
                  fill = "Género", color = "Género")
@@ -566,7 +580,7 @@ server <- function(input, output, session) {
                   panel.grid.minor.x = element_blank(),
                   legend.text.align = 0,
                   legend.title = element_text(color = color_destacado),
-                  legend.text = element_text(margin = margin(l = -3, r = 5))
+                  legend.text = element_text(margin = margin(l = 4, r = 5))
             ) +
             labs(y = "Categorías de edad", x = "Población por grupo de edad y género",
                  fill = "Género", color = "Género")
@@ -582,11 +596,11 @@ server <- function(input, output, session) {
     output$comparacion_años_comunas <- render_gt({
         req(length(input$comunas) > 0)
         
-        año_2 = sym(as.character(input$comparar_años[2]))
-        año_1 = sym(as.character(input$comparar_años[1]))
+        año_2 = sym(as.character(input$comparar_años_comunas[2]))
+        año_1 = sym(as.character(input$comparar_años_comunas[1]))
         
         proyecciones_comunas() |> 
-            filter(año %in% input$comparar_años) |> 
+            filter(año %in% input$comparar_años_comunas) |> 
             arrange(desc(población)) |> 
             tidyr::pivot_wider(id_cols = comuna, names_from = año, values_from = población) |> 
             mutate(cambio := (!!año_2 - !!año_1) / !!año_2) |> 
@@ -596,11 +610,12 @@ server <- function(input, output, session) {
             relocate(flecha, .before = cambio) |> 
             #tabla
             gt() |> 
-            gt_fa_column(flecha, palette = c("angles-up" = color_negativo, "arrow-up" = color_destacado, "arrow-down" = color_negativo)) |> 
-            fmt_percent(
-                columns = cambio,
-                decimals = 1,
-            ) |> 
+            # gt_fa_column(flecha, palette = c("angles-up" = color_negativo, 
+            #                                  "arrow-up" = color_destacado, 
+            #                                  "arrow-down" = color_negativo)) |>
+            fmt_icon(flecha) |> 
+            fmt_percent(columns = cambio,
+                        decimals = 1) |> 
             cols_align(columns = where(is.numeric), align = "left") |> 
             fmt_number(columns = 2:3, sep_mark = ".", decimals = 0) |> 
             cols_label(
@@ -636,11 +651,12 @@ server <- function(input, output, session) {
             relocate(flecha, .before = cambio) |> 
             #tabla
             gt() |> 
-            gt_fa_column(flecha, palette = c("angles-up" = color_negativo, "arrow-up" = color_destacado, "arrow-down" = color_negativo)) |> 
-            fmt_percent(
-                columns = cambio,
-                decimals = 1,
-            ) |> 
+            # gt_fa_column(flecha, palette = c("angles-up" = color_negativo, "arrow-up" = color_destacado, "arrow-down" = color_negativo)) |> 
+            fmt_icon(flecha) |>
+            # tab_style(style = cell_text(color = color_negativo),
+            #           locations = cells_body(columns = flecha, rows = flecha == "angles-up")) |> 
+            fmt_percent(columns = cambio,
+                        decimals = 1) |> 
             cols_align(columns = where(is.numeric), align = "left") |> 
             fmt_number(columns = 2:3, sep_mark = ".", decimals = 0) |> 
             cols_label(
