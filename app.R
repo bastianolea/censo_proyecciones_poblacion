@@ -19,9 +19,9 @@ color_masculino = "#964191" #"#770072" |> lighten(0.2)
 color_femenino = "#5B4898" #"#3a1582" |> lighten(0.2)
 
 
-proyecciones <- arrow::read_parquet("resultados/censo_proyecciones_año.parquet")
+proyecciones <- arrow::read_parquet("datos_procesados/censo_proyecciones_año.parquet")
 
-proyecciones_edad <- arrow::read_parquet("resultados/censo_proyecciones_año_edad_genero.parquet")
+proyecciones_edad <- arrow::read_parquet("datos_procesados/censo_proyecciones_año_edad_genero.parquet")
 
 options(spinner.type = 4, spinner.color = color_destacado)
 

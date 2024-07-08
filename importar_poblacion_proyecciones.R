@@ -3,5 +3,5 @@
 
 #descargar
 download.file("https://www.ine.gob.cl/docs/default-source/proyecciones-de-poblacion/cuadros-estadisticos/base-2017/estimaciones-y-proyecciones-2002-2035-comunas.xlsx", 
-              destfile = "datos/censo_proyecciones_poblacion.xlsx"
+              destfile = "datos_originales/censo_proyecciones_poblacion.xlsx"
 )
