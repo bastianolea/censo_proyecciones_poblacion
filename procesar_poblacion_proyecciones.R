@@ -2,7 +2,7 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 
-proyecciones_0 <- readxl::read_excel("datos_originales/censo_proyecciones_poblacion.xlsx")
+proyecciones_0 <- readxl::read_excel("datos/datos_originales/censo_proyecciones_poblacion.xlsx")
 
 #limpiar y convertir a formato largo (una observación por fila)
 proyecciones_long <- proyecciones_0 |> 
@@ -27,21 +27,22 @@ proyecciones_año
 
 ## guardar ----
 proyecciones_año |> 
-    arrow::write_parquet("datos_procesados/censo_proyecciones_año.parquet")
+    arrow::write_parquet("datos/datos_procesados/censo_proyecciones_año.parquet")
 
 proyecciones_año |> 
-    write.csv2("datos_procesados/censo_proyecciones_año.csv")
+    write.csv2("datos/datos_procesados/censo_proyecciones_año.csv")
 
 
 # proyeccion 2024 ----
-
 proyeccion_2024 <- proyecciones_año |> 
     filter(año == 2024) |> 
     select(-año)
 
-write.csv2(proyeccion_2024, "datos_procesados/censo_proyeccion_2024.csv")
-writexl::write_xlsx(proyeccion_2024, "datos_procesados/censo_proyeccion_2024.xlsx")
+write.csv2(proyeccion_2024, "datos/datos_procesados/censo_proyeccion_2024.csv")
+writexl::write_xlsx(proyeccion_2024, "datos/datos_procesados/censo_proyeccion_2024.xlsx")
 
+# board <- pins::board_folder("xxx")
+# board |> pins::pin_write(proyeccion_2024, "censo_proyeccion_2024")
 
 # población por año, género, edad y comuna ----
 proyecciones_edad_genero <- proyecciones_long |> 
@@ -50,7 +51,7 @@ proyecciones_edad_genero <- proyecciones_long |>
     select(-sexo_1_hombre_2_mujer)
 
 proyecciones_edad_genero |> 
-    arrow::write_parquet("datos_procesados/censo_proyecciones_año_edad_genero.parquet")
+    arrow::write_parquet("datos/datos_procesados/censo_proyecciones_año_edad_genero.parquet")
 
 
 # población edad promedio ----
@@ -65,7 +66,7 @@ proyecciones_edad_promedio <- proyecciones_edad |>
              año) |>
     summarize(poblacion = weighted.mean(edad, poblacion))
 
-write.csv2(proyecciones_edad_promedio, "datos_procesados/censo_proyecciones_edad_prom.csv")
+write.csv2(proyecciones_edad_promedio, "datos/datos_procesados/censo_proyecciones_edad_prom.csv")
 
 
 # población menor de edad y tercera edad ----
@@ -79,7 +80,7 @@ proyecciones_porcentaje_menores <- proyecciones_edad |>
     pivot_wider(names_from = menor, values_from = poblacion) |> 
     mutate(menores_porcentaje = menor/mayor)
 
-write.csv2(proyecciones_porcentaje_menores, "datos_procesados/censo_proyecciones_edad_menores.csv")
+write.csv2(proyecciones_porcentaje_menores, "datos/datos_procesados/censo_proyecciones_edad_menores.csv")
 
 
 # porcentaje de cada comuna que son mayores de 60
@@ -92,4 +93,18 @@ proyecciones_porcentaje_terceraedad <- proyecciones_edad |>
     pivot_wider(names_from = mayor, values_from = poblacion) |> 
     mutate(menores_porcentaje = mayor/otros)
 
-write.csv2(proyecciones_porcentaje_terceraedad, "datos_procesados/censo_proyecciones_edad_adultomayor.csv")
+write.csv2(proyecciones_porcentaje_terceraedad, "datos/datos_procesados/censo_proyecciones_edad_adultomayor.csv")
+
+
+
+# población en edad activa educación superior ----
+proyecciones_ed_superior <- proyecciones_edad |> 
+    mutate(ed_superior = ifelse(edad >= 17 & edad <= 24, "pob_activa", "resto_poblacion")) |> 
+    group_by(cut_region, region, cut_provincia, provincia, cut_comuna, comuna,
+             año, ed_superior) |> 
+    summarize(poblacion_ed_superior = sum(poblacion)) |> 
+    ungroup() |> 
+    pivot_wider(names_from = ed_superior, values_from = poblacion_ed_superior) |> 
+    mutate(ed_superior_porcentaje = pob_activa/resto_poblacion)
+
+write.csv2(proyecciones_ed_superior, "datos/datos_procesados/censo_proyecciones_ed_superior.csv")

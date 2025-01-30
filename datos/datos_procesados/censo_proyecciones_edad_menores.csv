@@ -30,7 +30,7 @@
 "29";1;"Tarapacá";11;"Iquique";1101;"Iquique";2030;188329;49844;0,264664496705234
 "30";1;"Tarapacá";11;"Iquique";1101;"Iquique";2031;189671;49231;0,259559974903913
 "31";1;"Tarapacá";11;"Iquique";1101;"Iquique";2032;190934;48606;0,254569641865776
-"32";1;"Tarapacá";11;"Iquique";1101;"Iquique";2033;192140;47949;0,249552409701259
+"32";1;"Tarapacá";11;"Iquique";1101;"Iquique";2033;192140;47949;0,24955240970126
 "33";1;"Tarapacá";11;"Iquique";1101;"Iquique";2034;193173;47371;0,245225782070993
 "34";1;"Tarapacá";11;"Iquique";1101;"Iquique";2035;193919;46986;0,242297041548275
 "35";1;"Tarapacá";11;"Iquique";1107;"Alto Hospicio";2002;30790;22835;0,74163689509581
@@ -95,7 +95,7 @@
 "94";1;"Tarapacá";14;"Tamarugal";1401;"Pozo Almonte";2027;14081;5341;0,379305447056317
 "95";1;"Tarapacá";14;"Tamarugal";1401;"Pozo Almonte";2028;14310;5322;0,371907756813417
 "96";1;"Tarapacá";14;"Tamarugal";1401;"Pozo Almonte";2029;14539;5292;0,363986519017814
-"97";1;"Tarapacá";14;"Tamarugal";1401;"Pozo Almonte";2030;14751;5265;0,356924954240391
+"97";1;"Tarapacá";14;"Tamarugal";1401;"Pozo Almonte";2030;14751;5265;0,35692495424039
 "98";1;"Tarapacá";14;"Tamarugal";1401;"Pozo Almonte";2031;14950;5243;0,350702341137124
 "99";1;"Tarapacá";14;"Tamarugal";1401;"Pozo Almonte";2032;15141;5215;0,344429033749422
 "100";1;"Tarapacá";14;"Tamarugal";1401;"Pozo Almonte";2033;15327;5183;0,338161414497292
@@ -860,7 +860,7 @@
 "859";4;"Coquimbo";41;"Elqui";4101;"La Serena";2010;145337;54397;0,374281841513173
 "860";4;"Coquimbo";41;"Elqui";4101;"La Serena";2011;149503;54852;0,366895647578978
 "861";4;"Coquimbo";41;"Elqui";4101;"La Serena";2012;153646;55437;0,360809913697721
-"862";4;"Coquimbo";41;"Elqui";4101;"La Serena";2013;157754;56039;0,355230295269851
+"862";4;"Coquimbo";41;"Elqui";4101;"La Serena";2013;157754;56039;0,35523029526985
 "863";4;"Coquimbo";41;"Elqui";4101;"La Serena";2014;161862;56751;0,350613485561775
 "864";4;"Coquimbo";41;"Elqui";4101;"La Serena";2015;165987;57531;0,346599432485677
 "865";4;"Coquimbo";41;"Elqui";4101;"La Serena";2016;170126;58187;0,342022971209574
@@ -1504,7 +1504,7 @@
 "1503";5;"Valparaíso";51;"Valparaíso";5105;"Puchuncaví";2008;11457;4297;0,375054551802392
 "1504";5;"Valparaíso";51;"Valparaíso";5105;"Puchuncaví";2009;11806;4316;0,365576825343046
 "1505";5;"Valparaíso";51;"Valparaíso";5105;"Puchuncaví";2010;12147;4333;0,356713591833374
-"1506";5;"Valparaíso";51;"Valparaíso";5105;"Puchuncaví";2011;12485;4360;0,349219062875451
+"1506";5;"Valparaíso";51;"Valparaíso";5105;"Puchuncaví";2011;12485;4360;0,34921906287545
 "1507";5;"Valparaíso";51;"Valparaíso";5105;"Puchuncaví";2012;12816;4389;0,342462546816479
 "1508";5;"Valparaíso";51;"Valparaíso";5105;"Puchuncaví";2013;13130;4411;0,335948210205636
 "1509";5;"Valparaíso";51;"Valparaíso";5105;"Puchuncaví";2014;13447;4439;0,330110805384101
@@ -1627,8 +1627,8 @@
 "1626";5;"Valparaíso";52;"Isla de Pascua";5201;"Isla de Pascua";2029;7223;2219;0,307213069361761
 "1627";5;"Valparaíso";52;"Isla de Pascua";5201;"Isla de Pascua";2030;7312;2220;0,303610503282276
 "1628";5;"Valparaíso";52;"Isla de Pascua";5201;"Isla de Pascua";2031;7398;2224;0,300621789672885
-"1629";5;"Valparaíso";52;"Isla de Pascua";5201;"Isla de Pascua";2032;7487;2224;0,297048216909309
-"1630";5;"Valparaíso";52;"Isla de Pascua";5201;"Isla de Pascua";2033;7565;2218;0,293192333113021
+"1629";5;"Valparaíso";52;"Isla de Pascua";5201;"Isla de Pascua";2032;7487;2224;0,29704821690931
+"1630";5;"Valparaíso";52;"Isla de Pascua";5201;"Isla de Pascua";2033;7565;2218;0,29319233311302
 "1631";5;"Valparaíso";52;"Isla de Pascua";5201;"Isla de Pascua";2034;7643;2219;0,290331021850059
 "1632";5;"Valparaíso";52;"Isla de Pascua";5201;"Isla de Pascua";2035;7712;2222;0,288122406639004
 "1633";5;"Valparaíso";53;"Los Andes";5301;"Los Andes";2002;42058;19616;0,466403537971373
@@ -1781,8 +1781,8 @@
 "1780";5;"Valparaíso";54;"Petorca";5401;"La Ligua";2013;26460;9288;0,351020408163265
 "1781";5;"Valparaíso";54;"Petorca";5401;"La Ligua";2014;26804;9180;0,342486196090136
 "1782";5;"Valparaíso";54;"Petorca";5401;"La Ligua";2015;27130;9097;0,335311463324733
-"1783";5;"Valparaíso";54;"Petorca";5401;"La Ligua";2016;27449;9016;0,328463696309519
-"1784";5;"Valparaíso";54;"Petorca";5401;"La Ligua";2017;27829;8920;0,320528944626109
+"1783";5;"Valparaíso";54;"Petorca";5401;"La Ligua";2016;27449;9016;0,32846369630952
+"1784";5;"Valparaíso";54;"Petorca";5401;"La Ligua";2017;27829;8920;0,32052894462611
 "1785";5;"Valparaíso";54;"Petorca";5401;"La Ligua";2018;28236;8838;0,313004674883128
 "1786";5;"Valparaíso";54;"Petorca";5401;"La Ligua";2019;28633;8778;0,306569343065693
 "1787";5;"Valparaíso";54;"Petorca";5401;"La Ligua";2020;29013;8726;0,300761727501465
@@ -1917,7 +1917,7 @@
 "1916";5;"Valparaíso";54;"Petorca";5405;"Zapallar";2013;5409;1747;0,322980218154927
 "1917";5;"Valparaíso";54;"Petorca";5405;"Zapallar";2014;5532;1732;0,313087490961678
 "1918";5;"Valparaíso";54;"Petorca";5405;"Zapallar";2015;5647;1730;0,306357357889145
-"1919";5;"Valparaíso";54;"Petorca";5405;"Zapallar";2016;5770;1719;0,297920277296361
+"1919";5;"Valparaíso";54;"Petorca";5405;"Zapallar";2016;5770;1719;0,29792027729636
 "1920";5;"Valparaíso";54;"Petorca";5405;"Zapallar";2017;5900;1707;0,289322033898305
 "1921";5;"Valparaíso";54;"Petorca";5405;"Zapallar";2018;6032;1703;0,282327586206897
 "1922";5;"Valparaíso";54;"Petorca";5405;"Zapallar";2019;6160;1706;0,276948051948052
@@ -2154,7 +2154,7 @@
 "2153";5;"Valparaíso";56;"San Antonio";5602;"Algarrobo";2012;9673;2999;0,310038250801199
 "2154";5;"Valparaíso";56;"San Antonio";5602;"Algarrobo";2013;9979;3013;0,301934061529211
 "2155";5;"Valparaíso";56;"San Antonio";5602;"Algarrobo";2014;10276;3027;0,294569871545348
-"2156";5;"Valparaíso";56;"San Antonio";5602;"Algarrobo";2015;10567;3045;0,288161256742689
+"2156";5;"Valparaíso";56;"San Antonio";5602;"Algarrobo";2015;10567;3045;0,28816125674269
 "2157";5;"Valparaíso";56;"San Antonio";5602;"Algarrobo";2016;10850;3061;0,282119815668203
 "2158";5;"Valparaíso";56;"San Antonio";5602;"Algarrobo";2017;11149;3072;0,275540407211409
 "2159";5;"Valparaíso";56;"San Antonio";5602;"Algarrobo";2018;11459;3084;0,26913343223667
@@ -2517,7 +2517,7 @@
 "2516";5;"Valparaíso";57;"San Felipe";5706;"Santa María";2035;14631;3629;0,248034994190418
 "2517";5;"Valparaíso";58;"Marga Marga";5801;"Quilpué";2002;94350;38883;0,412114467408585
 "2518";5;"Valparaíso";58;"Marga Marga";5801;"Quilpué";2003;96272;38753;0,402536563071298
-"2519";5;"Valparaíso";58;"Marga Marga";5801;"Quilpué";2004;98161;38607;0,393302839213129
+"2519";5;"Valparaíso";58;"Marga Marga";5801;"Quilpué";2004;98161;38607;0,39330283921313
 "2520";5;"Valparaíso";58;"Marga Marga";5801;"Quilpué";2005;100061;38409;0,383855847932761
 "2521";5;"Valparaíso";58;"Marga Marga";5801;"Quilpué";2006;102025;38142;0,373849546679735
 "2522";5;"Valparaíso";58;"Marga Marga";5801;"Quilpué";2007;104082;37795;0,363127149747315
@@ -2776,7 +2776,7 @@
 "2775";6;"Libertador General Bernardo O'Higgins";61;"Cachapoal";6104;"Coltauco";2022;16691;5034;0,301599664489845
 "2776";6;"Libertador General Bernardo O'Higgins";61;"Cachapoal";6104;"Coltauco";2023;16911;5025;0,297143870853291
 "2777";6;"Libertador General Bernardo O'Higgins";61;"Cachapoal";6104;"Coltauco";2024;17127;5016;0,292870905587669
-"2778";6;"Libertador General Bernardo O'Higgins";61;"Cachapoal";6104;"Coltauco";2025;17347;5000;0,288234276820199
+"2778";6;"Libertador General Bernardo O'Higgins";61;"Cachapoal";6104;"Coltauco";2025;17347;5000;0,2882342768202
 "2779";6;"Libertador General Bernardo O'Higgins";61;"Cachapoal";6104;"Coltauco";2026;17580;4969;0,282650739476678
 "2780";6;"Libertador General Bernardo O'Higgins";61;"Cachapoal";6104;"Coltauco";2027;17811;4935;0,27707596429173
 "2781";6;"Libertador General Bernardo O'Higgins";61;"Cachapoal";6104;"Coltauco";2028;18057;4884;0,27047682339259
@@ -3520,7 +3520,7 @@
 "3519";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6303;"Chimbarongo";2018;28181;8881;0,315141407331181
 "3520";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6303;"Chimbarongo";2019;28586;8800;0,307843000069964
 "3521";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6303;"Chimbarongo";2020;28971;8725;0,301163232197715
-"3522";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6303;"Chimbarongo";2021;29265;8670;0,296258329062019
+"3522";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6303;"Chimbarongo";2021;29265;8670;0,29625832906202
 "3523";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6303;"Chimbarongo";2022;29507;8610;0,29179516724845
 "3524";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6303;"Chimbarongo";2023;29732;8556;0,287770752051662
 "3525";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6303;"Chimbarongo";2024;29949;8502;0,283882600420715
@@ -3656,7 +3656,7 @@
 "3655";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6307;"Peralillo";2018;9055;2551;0,281722805080066
 "3656";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6307;"Peralillo";2019;9197;2528;0,274872240948135
 "3657";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6307;"Peralillo";2020;9340;2508;0,268522483940043
-"3658";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6307;"Peralillo";2021;9454;2492;0,263592130315211
+"3658";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6307;"Peralillo";2021;9454;2492;0,26359213031521
 "3659";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6307;"Peralillo";2022;9554;2473;0,258844463052125
 "3660";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6307;"Peralillo";2023;9641;2459;0,255056529405663
 "3661";6;"Libertador General Bernardo O'Higgins";63;"Colchagua";6307;"Peralillo";2024;9728;2446;0,251439144736842
@@ -3926,7 +3926,7 @@
 "3925";7;"Maule";71;"Talca";7105;"Maule";2016;34539;15036;0,43533397029445
 "3926";7;"Maule";71;"Talca";7105;"Maule";2017;36374;15836;0,435365920712597
 "3927";7;"Maule";71;"Talca";7105;"Maule";2018;38412;16429;0,427704883890451
-"3928";7;"Maule";71;"Talca";7105;"Maule";2019;40451;16996;0,420162665941509
+"3928";7;"Maule";71;"Talca";7105;"Maule";2019;40451;16996;0,42016266594151
 "3929";7;"Maule";71;"Talca";7105;"Maule";2020;42440;17560;0,413760603204524
 "3930";7;"Maule";71;"Talca";7105;"Maule";2021;44281;18113;0,409046769494817
 "3931";7;"Maule";71;"Talca";7105;"Maule";2022;46031;18645;0,405053116378093
@@ -4119,7 +4119,7 @@
 "4118";7;"Maule";72;"Cauquenes";7201;"Cauquenes";2005;29924;12889;0,430724502071916
 "4119";7;"Maule";72;"Cauquenes";7201;"Cauquenes";2006;30150;12633;0,419004975124378
 "4120";7;"Maule";72;"Cauquenes";7201;"Cauquenes";2007;30434;12340;0,405467569166064
-"4121";7;"Maule";72;"Cauquenes";7201;"Cauquenes";2008;30722;12073;0,392975717726711
+"4121";7;"Maule";72;"Cauquenes";7201;"Cauquenes";2008;30722;12073;0,39297571772671
 "4122";7;"Maule";72;"Cauquenes";7201;"Cauquenes";2009;31030;11812;0,380663873670641
 "4123";7;"Maule";72;"Cauquenes";7201;"Cauquenes";2010;31327;11573;0,369425734988987
 "4124";7;"Maule";72;"Cauquenes";7201;"Cauquenes";2011;31601;11367;0,359703806841556
@@ -4274,7 +4274,7 @@
 "4273";7;"Maule";73;"Curicó";7302;"Hualañé";2024;8201;2024;0,246799170832825
 "4274";7;"Maule";73;"Curicó";7302;"Hualañé";2025;8221;1998;0,24303612699185
 "4275";7;"Maule";73;"Curicó";7302;"Hualañé";2026;8245;1965;0,238326258338387
-"4276";7;"Maule";73;"Curicó";7302;"Hualañé";2027;8271;1929;0,233224519405151
+"4276";7;"Maule";73;"Curicó";7302;"Hualañé";2027;8271;1929;0,23322451940515
 "4277";7;"Maule";73;"Curicó";7302;"Hualañé";2028;8295;1893;0,228209764918626
 "4278";7;"Maule";73;"Curicó";7302;"Hualañé";2029;8308;1865;0,224482426576793
 "4279";7;"Maule";73;"Curicó";7302;"Hualañé";2030;8325;1832;0,22006006006006
@@ -4393,7 +4393,7 @@
 "4392";7;"Maule";73;"Curicó";7306;"Romeral";2007;9745;3986;0,409030271934325
 "4393";7;"Maule";73;"Curicó";7306;"Romeral";2008;9949;3934;0,395416624786411
 "4394";7;"Maule";73;"Curicó";7306;"Romeral";2009;10154;3890;0,383100256056726
-"4395";7;"Maule";73;"Curicó";7306;"Romeral";2010;10358;3852;0,371886464568449
+"4395";7;"Maule";73;"Curicó";7306;"Romeral";2010;10358;3852;0,37188646456845
 "4396";7;"Maule";73;"Curicó";7306;"Romeral";2011;10559;3821;0,361871389336111
 "4397";7;"Maule";73;"Curicó";7306;"Romeral";2012;10759;3789;0,35217027604796
 "4398";7;"Maule";73;"Curicó";7306;"Romeral";2013;10951;3769;0,344169482239065
@@ -4421,7 +4421,7 @@
 "4420";7;"Maule";73;"Curicó";7306;"Romeral";2035;15250;3637;0,238491803278689
 "4421";7;"Maule";73;"Curicó";7307;"Sagrada Familia";2002;12421;5666;0,456162949843008
 "4422";7;"Maule";73;"Curicó";7307;"Sagrada Familia";2003;12545;5582;0,444958150657633
-"4423";7;"Maule";73;"Curicó";7307;"Sagrada Familia";2004;12676;5492;0,433259703376459
+"4423";7;"Maule";73;"Curicó";7307;"Sagrada Familia";2004;12676;5492;0,43325970337646
 "4424";7;"Maule";73;"Curicó";7307;"Sagrada Familia";2005;12811;5393;0,420966357036921
 "4425";7;"Maule";73;"Curicó";7307;"Sagrada Familia";2006;12960;5283;0,407638888888889
 "4426";7;"Maule";73;"Curicó";7307;"Sagrada Familia";2007;13128;5162;0,39320536258379
@@ -4458,7 +4458,7 @@
 "4457";7;"Maule";73;"Curicó";7308;"Teno";2004;18296;8445;0,461576300830783
 "4458";7;"Maule";73;"Curicó";7308;"Teno";2005;18605;8313;0,446815372211771
 "4459";7;"Maule";73;"Curicó";7308;"Teno";2006;18934;8166;0,431287630717228
-"4460";7;"Maule";73;"Curicó";7308;"Teno";2007;19291;8005;0,414960344201959
+"4460";7;"Maule";73;"Curicó";7308;"Teno";2007;19291;8005;0,41496034420196
 "4461";7;"Maule";73;"Curicó";7308;"Teno";2008;19656;7855;0,399623524623525
 "4462";7;"Maule";73;"Curicó";7308;"Teno";2009;20032;7710;0,384884185303514
 "4463";7;"Maule";73;"Curicó";7308;"Teno";2010;20395;7585;0,371904878646727
@@ -4507,7 +4507,7 @@
 "4506";7;"Maule";73;"Curicó";7309;"Vichuquén";2019;3534;856;0,242218449349179
 "4507";7;"Maule";73;"Curicó";7309;"Vichuquén";2020;3540;841;0,237570621468927
 "4508";7;"Maule";73;"Curicó";7309;"Vichuquén";2021;3536;829;0,234445701357466
-"4509";7;"Maule";73;"Curicó";7309;"Vichuquén";2022;3536;811;0,229355203619909
+"4509";7;"Maule";73;"Curicó";7309;"Vichuquén";2022;3536;811;0,22935520361991
 "4510";7;"Maule";73;"Curicó";7309;"Vichuquén";2023;3529;800;0,226693114196656
 "4511";7;"Maule";73;"Curicó";7309;"Vichuquén";2024;3525;786;0,222978723404255
 "4512";7;"Maule";73;"Curicó";7309;"Vichuquén";2025;3527;767;0,217465267933088
@@ -4569,7 +4569,7 @@
 "4568";7;"Maule";74;"Linares";7402;"Colbún";2013;15249;5426;0,355826611581087
 "4569";7;"Maule";74;"Linares";7402;"Colbún";2014;15518;5395;0,347660781028483
 "4570";7;"Maule";74;"Linares";7402;"Colbún";2015;15782;5385;0,341211506779876
-"4571";7;"Maule";74;"Linares";7402;"Colbún";2016;16053;5374;0,334766087335701
+"4571";7;"Maule";74;"Linares";7402;"Colbún";2016;16053;5374;0,3347660873357
 "4572";7;"Maule";74;"Linares";7402;"Colbún";2017;16348;5356;0,327624174210913
 "4573";7;"Maule";74;"Linares";7402;"Colbún";2018;16657;5334;0,320225730923936
 "4574";7;"Maule";74;"Linares";7402;"Colbún";2019;16966;5313;0,313155723211128
@@ -4729,7 +4729,7 @@
 "4728";7;"Maule";74;"Linares";7407;"Villa Alegre";2003;10672;4633;0,434126686656672
 "4729";7;"Maule";74;"Linares";7407;"Villa Alegre";2004;10803;4594;0,42525224474683
 "4730";7;"Maule";74;"Linares";7407;"Villa Alegre";2005;10945;4539;0,414709913202375
-"4731";7;"Maule";74;"Linares";7407;"Villa Alegre";2006;11095;4480;0,403785488958991
+"4731";7;"Maule";74;"Linares";7407;"Villa Alegre";2006;11095;4480;0,40378548895899
 "4732";7;"Maule";74;"Linares";7407;"Villa Alegre";2007;11268;4405;0,390930067447639
 "4733";7;"Maule";74;"Linares";7407;"Villa Alegre";2008;11441;4342;0,37951228039507
 "4734";7;"Maule";74;"Linares";7407;"Villa Alegre";2009;11627;4275;0,367678678936957
@@ -5003,7 +5003,7 @@
 "5002";8;"Biobío";81;"Concepción";8107;"Penco";2005;33356;14386;0,431286725026982
 "5003";8;"Biobío";81;"Concepción";8107;"Penco";2006;33656;14140;0,420133111480865
 "5004";8;"Biobío";81;"Concepción";8107;"Penco";2007;34021;13864;0,407513006672349
-"5005";8;"Biobío";81;"Concepción";8107;"Penco";2008;34411;13580;0,394641248437999
+"5005";8;"Biobío";81;"Concepción";8107;"Penco";2008;34411;13580;0,394641248438
 "5006";8;"Biobío";81;"Concepción";8107;"Penco";2009;34832;13293;0,381631832797428
 "5007";8;"Biobío";81;"Concepción";8107;"Penco";2010;35224;13054;0,370599591187826
 "5008";8;"Biobío";81;"Concepción";8107;"Penco";2011;35591;12863;0,361411592818409
@@ -5068,7 +5068,7 @@
 "5067";8;"Biobío";81;"Concepción";8109;"Santa Juana";2002;8991;4313;0,479701924146369
 "5068";8;"Biobío";81;"Concepción";8109;"Santa Juana";2003;9143;4291;0,469320791862627
 "5069";8;"Biobío";81;"Concepción";8109;"Santa Juana";2004;9290;4257;0,458234660925727
-"5070";8;"Biobío";81;"Concepción";8109;"Santa Juana";2005;9435;4213;0,446528881822999
+"5070";8;"Biobío";81;"Concepción";8109;"Santa Juana";2005;9435;4213;0,446528881823
 "5071";8;"Biobío";81;"Concepción";8109;"Santa Juana";2006;9582;4157;0,433834272594448
 "5072";8;"Biobío";81;"Concepción";8109;"Santa Juana";2007;9750;4082;0,418666666666667
 "5073";8;"Biobío";81;"Concepción";8109;"Santa Juana";2008;9917;4004;0,40375113441565
@@ -5076,7 +5076,7 @@
 "5075";8;"Biobío";81;"Concepción";8109;"Santa Juana";2010;10241;3858;0,376721023337565
 "5076";8;"Biobío";81;"Concepción";8109;"Santa Juana";2011;10388;3802;0,365999229880631
 "5077";8;"Biobío";81;"Concepción";8109;"Santa Juana";2012;10522;3748;0,356206044478236
-"5078";8;"Biobío";81;"Concepción";8109;"Santa Juana";2013;10654;3683;0,345691758963769
+"5078";8;"Biobío";81;"Concepción";8109;"Santa Juana";2013;10654;3683;0,34569175896377
 "5079";8;"Biobío";81;"Concepción";8109;"Santa Juana";2014;10764;3641;0,338257153474545
 "5080";8;"Biobío";81;"Concepción";8109;"Santa Juana";2015;10876;3598;0,330820154468555
 "5081";8;"Biobío";81;"Concepción";8109;"Santa Juana";2016;10984;3557;0,323834668608886
@@ -5085,7 +5085,7 @@
 "5084";8;"Biobío";81;"Concepción";8109;"Santa Juana";2019;11319;3404;0,300733280325117
 "5085";8;"Biobío";81;"Concepción";8109;"Santa Juana";2020;11422;3357;0,293906496235335
 "5086";8;"Biobío";81;"Concepción";8109;"Santa Juana";2021;11502;3317;0,288384628760216
-"5087";8;"Biobío";81;"Concepción";8109;"Santa Juana";2022;11566;3280;0,283589832266989
+"5087";8;"Biobío";81;"Concepción";8109;"Santa Juana";2022;11566;3280;0,28358983226699
 "5088";8;"Biobío";81;"Concepción";8109;"Santa Juana";2023;11631;3239;0,278479924340126
 "5089";8;"Biobío";81;"Concepción";8109;"Santa Juana";2024;11689;3201;0,273847206775601
 "5090";8;"Biobío";81;"Concepción";8109;"Santa Juana";2025;11747;3160;0,269004852302716
@@ -5246,7 +5246,7 @@
 "5245";8;"Biobío";82;"Arauco";8202;"Arauco";2010;26339;10940;0,415353658073579
 "5246";8;"Biobío";82;"Arauco";8202;"Arauco";2011;26679;10769;0,403650811499681
 "5247";8;"Biobío";82;"Arauco";8202;"Arauco";2012;27004;10595;0,392349281587913
-"5248";8;"Biobío";82;"Arauco";8202;"Arauco";2013;27303;10423;0,381752920924441
+"5248";8;"Biobío";82;"Arauco";8202;"Arauco";2013;27303;10423;0,38175292092444
 "5249";8;"Biobío";82;"Arauco";8202;"Arauco";2014;27591;10268;0,37215033887862
 "5250";8;"Biobío";82;"Arauco";8202;"Arauco";2015;27866;10137;0,363776645374291
 "5251";8;"Biobío";82;"Arauco";8202;"Arauco";2016;28142;10002;0,355411839954516
@@ -5416,7 +5416,7 @@
 "5415";8;"Biobío";82;"Arauco";8207;"Tirúa";2010;7061;3497;0,495255629514233
 "5416";8;"Biobío";82;"Arauco";8207;"Tirúa";2011;7173;3443;0,479994423532692
 "5417";8;"Biobío";82;"Arauco";8207;"Tirúa";2012;7280;3387;0,465247252747253
-"5418";8;"Biobío";82;"Arauco";8207;"Tirúa";2013;7373;3335;0,452326054523261
+"5418";8;"Biobío";82;"Arauco";8207;"Tirúa";2013;7373;3335;0,45232605452326
 "5419";8;"Biobío";82;"Arauco";8207;"Tirúa";2014;7470;3284;0,439625167336011
 "5420";8;"Biobío";82;"Arauco";8207;"Tirúa";2015;7562;3239;0,42832583972494
 "5421";8;"Biobío";82;"Arauco";8207;"Tirúa";2016;7645;3202;0,418835840418574
@@ -5453,7 +5453,7 @@
 "5452";8;"Biobío";83;"Bíobío";8301;"Los Angeles";2013;148316;56180;0,378785835648211
 "5453";8;"Biobío";83;"Bíobío";8301;"Los Angeles";2014;150690;55982;0,37150441303338
 "5454";8;"Biobío";83;"Bíobío";8301;"Los Angeles";2015;152957;55876;0,365305281876606
-"5455";8;"Biobío";83;"Bíobío";8301;"Los Angeles";2016;155154;55766;0,359423540482359
+"5455";8;"Biobío";83;"Bíobío";8301;"Los Angeles";2016;155154;55766;0,35942354048236
 "5456";8;"Biobío";83;"Bíobío";8301;"Los Angeles";2017;157329;55546;0,353056334178696
 "5457";8;"Biobío";83;"Bíobío";8301;"Los Angeles";2018;159691;55108;0,345091457878027
 "5458";8;"Biobío";83;"Bíobío";8301;"Los Angeles";2019;162003;54692;0,337598686444078
@@ -5496,7 +5496,7 @@
 "5495";8;"Biobío";83;"Bíobío";8302;"Antuco";2022;3408;909;0,266725352112676
 "5496";8;"Biobío";83;"Bíobío";8302;"Antuco";2023;3424;898;0,262266355140187
 "5497";8;"Biobío";83;"Bíobío";8302;"Antuco";2024;3438;887;0,257998836532868
-"5498";8;"Biobío";83;"Bíobío";8302;"Antuco";2025;3458;870;0,251590514748409
+"5498";8;"Biobío";83;"Bíobío";8302;"Antuco";2025;3458;870;0,25159051474841
 "5499";8;"Biobío";83;"Bíobío";8302;"Antuco";2026;3471;859;0,247479112647652
 "5500";8;"Biobío";83;"Bíobío";8302;"Antuco";2027;3489;844;0,241903124104328
 "5501";8;"Biobío";83;"Bíobío";8302;"Antuco";2028;3510;823;0,234472934472934
@@ -5921,7 +5921,7 @@
 "5920";9;"La Araucanía";91;"Cautín";9101;"Temuco";2005;187333;77883;0,415746291363508
 "5921";9;"La Araucanía";91;"Cautín";9101;"Temuco";2006;190550;77193;0,405106271319864
 "5922";9;"La Araucanía";91;"Cautín";9101;"Temuco";2007;194029;76302;0,393250493482933
-"5923";9;"La Araucanía";91;"Cautín";9101;"Temuco";2008;197505;75464;0,382086529454951
+"5923";9;"La Araucanía";91;"Cautín";9101;"Temuco";2008;197505;75464;0,38208652945495
 "5924";9;"La Araucanía";91;"Cautín";9101;"Temuco";2009;201001;74721;0,371744419181994
 "5925";9;"La Araucanía";91;"Cautín";9101;"Temuco";2010;204420;73957;0,361789453086782
 "5926";9;"La Araucanía";91;"Cautín";9101;"Temuco";2011;207755;73339;0,353007147842411
@@ -6636,13 +6636,13 @@
 "6635";9;"La Araucanía";92;"Malleco";9201;"Angol";2006;35315;16301;0,46158856010194
 "6636";9;"La Araucanía";92;"Malleco";9201;"Angol";2007;35871;16038;0,447102115915363
 "6637";9;"La Araucanía";92;"Malleco";9201;"Angol";2008;36441;15783;0,433111056227875
-"6638";9;"La Araucanía";92;"Malleco";9201;"Angol";2009;37011;15557;0,420334495150091
+"6638";9;"La Araucanía";92;"Malleco";9201;"Angol";2009;37011;15557;0,42033449515009
 "6639";9;"La Araucanía";92;"Malleco";9201;"Angol";2010;37578;15321;0,40771195912502
 "6640";9;"La Araucanía";92;"Malleco";9201;"Angol";2011;38125;15124;0,396695081967213
 "6641";9;"La Araucanía";92;"Malleco";9201;"Angol";2012;38669;14925;0,385968088132613
 "6642";9;"La Araucanía";92;"Malleco";9201;"Angol";2013;39182;14710;0,375427492215813
 "6643";9;"La Araucanía";92;"Malleco";9201;"Angol";2014;39668;14524;0,366138953312494
-"6644";9;"La Araucanía";92;"Malleco";9201;"Angol";2015;40137;14383;0,358347659267011
+"6644";9;"La Araucanía";92;"Malleco";9201;"Angol";2015;40137;14383;0,35834765926701
 "6645";9;"La Araucanía";92;"Malleco";9201;"Angol";2016;40593;14234;0,350651590175646
 "6646";9;"La Araucanía";92;"Malleco";9201;"Angol";2017;41055;14085;0,343076360979174
 "6647";9;"La Araucanía";92;"Malleco";9201;"Angol";2018;41520;13931;0,335525048169557
@@ -6734,7 +6734,7 @@
 "6733";9;"La Araucanía";92;"Malleco";9204;"Ercilla";2002;5946;3515;0,591153716784393
 "6734";9;"La Araucanía";92;"Malleco";9204;"Ercilla";2003;5907;3410;0,577281191806331
 "6735";9;"La Araucanía";92;"Malleco";9204;"Ercilla";2004;5876;3316;0,564329475833901
-"6736";9;"La Araucanía";92;"Malleco";9204;"Ercilla";2005;5858;3221;0,549846363946739
+"6736";9;"La Araucanía";92;"Malleco";9204;"Ercilla";2005;5858;3221;0,54984636394674
 "6737";9;"La Araucanía";92;"Malleco";9204;"Ercilla";2006;5850;3130;0,535042735042735
 "6738";9;"La Araucanía";92;"Malleco";9204;"Ercilla";2007;5857;3038;0,518695577940925
 "6739";9;"La Araucanía";92;"Malleco";9204;"Ercilla";2008;5869;2954;0,503322542170728
@@ -6868,7 +6868,7 @@
 "6867";9;"La Araucanía";92;"Malleco";9207;"Lumaco";2034;7691;1924;0,250162527629697
 "6868";9;"La Araucanía";92;"Malleco";9207;"Lumaco";2035;7698;1887;0,245128604832424
 "6869";9;"La Araucanía";92;"Malleco";9208;"Purén";2002;8722;4747;0,544255904609035
-"6870";9;"La Araucanía";92;"Malleco";9208;"Purén";2003;8679;4607;0,530821523216961
+"6870";9;"La Araucanía";92;"Malleco";9208;"Purén";2003;8679;4607;0,53082152321696
 "6871";9;"La Araucanía";92;"Malleco";9208;"Purén";2004;8660;4465;0,515588914549654
 "6872";9;"La Araucanía";92;"Malleco";9208;"Purén";2005;8645;4336;0,501561596298438
 "6873";9;"La Araucanía";92;"Malleco";9208;"Purén";2006;8650;4199;0,485433526011561
@@ -6923,7 +6923,7 @@
 "6922";9;"La Araucanía";92;"Malleco";9209;"Renaico";2021;8268;2616;0,316400580551524
 "6923";9;"La Araucanía";92;"Malleco";9209;"Renaico";2022;8333;2596;0,311532461298452
 "6924";9;"La Araucanía";92;"Malleco";9209;"Renaico";2023;8391;2573;0,306638064593016
-"6925";9;"La Araucanía";92;"Malleco";9209;"Renaico";2024;8439;2563;0,303708970257139
+"6925";9;"La Araucanía";92;"Malleco";9209;"Renaico";2024;8439;2563;0,30370897025714
 "6926";9;"La Araucanía";92;"Malleco";9209;"Renaico";2025;8499;2537;0,298505706553712
 "6927";9;"La Araucanía";92;"Malleco";9209;"Renaico";2026;8554;2513;0,293780687397709
 "6928";9;"La Araucanía";92;"Malleco";9209;"Renaico";2027;8614;2484;0,288367773392152
@@ -7007,7 +7007,7 @@
 "7006";10;"Los Lagos";101;"Llanquihue";10101;"Puerto Montt";2003;127670;60694;0,475397509203415
 "7007";10;"Los Lagos";101;"Llanquihue";10101;"Puerto Montt";2004;132358;61655;0,46581997310325
 "7008";10;"Los Lagos";101;"Llanquihue";10101;"Puerto Montt";2005;137024;62507;0,456175560485754
-"7009";10;"Los Lagos";101;"Llanquihue";10101;"Puerto Montt";2006;141770;63255;0,446180433095859
+"7009";10;"Los Lagos";101;"Llanquihue";10101;"Puerto Montt";2006;141770;63255;0,44618043309586
 "7010";10;"Los Lagos";101;"Llanquihue";10101;"Puerto Montt";2007;146726;63658;0,433856303586276
 "7011";10;"Los Lagos";101;"Llanquihue";10101;"Puerto Montt";2008;151649;64222;0,423491087972885
 "7012";10;"Los Lagos";101;"Llanquihue";10101;"Puerto Montt";2009;156622;64741;0,413358276615035
@@ -7094,7 +7094,7 @@
 "7093";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2022;3268;708;0,216646266829865
 "7094";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2023;3273;687;0,209899175068744
 "7095";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2024;3276;671;0,204822954822955
-"7096";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2025;3274;658;0,200977397678681
+"7096";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2025;3274;658;0,20097739767868
 "7097";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2026;3282;637;0,194088970140158
 "7098";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2027;3289;618;0,187899057464275
 "7099";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2028;3294;600;0,182149362477231
@@ -7102,7 +7102,7 @@
 "7101";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2030;3301;571;0,172977885489246
 "7102";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2031;3302;559;0,169291338582677
 "7103";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2032;3300;550;0,166666666666667
-"7104";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2033;3301;538;0,162980914874281
+"7104";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2033;3301;538;0,16298091487428
 "7105";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2034;3303;526;0,159249167423554
 "7106";10;"Los Lagos";101;"Llanquihue";10103;"Cochamó";2035;3304;515;0,155871670702179
 "7107";10;"Los Lagos";101;"Llanquihue";10104;"Fresia";2002;8762;4369;0,498630449669025
@@ -7392,7 +7392,7 @@
 "7391";10;"Los Lagos";102;"Chiloé";10203;"Chonchi";2014;11212;3989;0,355779521940778
 "7392";10;"Los Lagos";102;"Chiloé";10203;"Chonchi";2015;11401;3961;0,347425664415402
 "7393";10;"Los Lagos";102;"Chiloé";10203;"Chonchi";2016;11588;3937;0,339748015188126
-"7394";10;"Los Lagos";102;"Chiloé";10203;"Chonchi";2017;11778;3905;0,331550348106639
+"7394";10;"Los Lagos";102;"Chiloé";10203;"Chonchi";2017;11778;3905;0,33155034810664
 "7395";10;"Los Lagos";102;"Chiloé";10203;"Chonchi";2018;11946;3851;0,322367319604889
 "7396";10;"Los Lagos";102;"Chiloé";10203;"Chonchi";2019;12110;3799;0,313707679603633
 "7397";10;"Los Lagos";102;"Chiloé";10203;"Chonchi";2020;12263;3750;0,305797928728696
@@ -7475,7 +7475,7 @@
 "7474";10;"Los Lagos";102;"Chiloé";10205;"Dalcahue";2029;12568;3308;0,263208147676639
 "7475";10;"Los Lagos";102;"Chiloé";10205;"Dalcahue";2030;12679;3273;0,258143386702421
 "7476";10;"Los Lagos";102;"Chiloé";10205;"Dalcahue";2031;12787;3239;0,253304137014155
-"7477";10;"Los Lagos";102;"Chiloé";10205;"Dalcahue";2032;12891;3207;0,248778217360949
+"7477";10;"Los Lagos";102;"Chiloé";10205;"Dalcahue";2032;12891;3207;0,24877821736095
 "7478";10;"Los Lagos";102;"Chiloé";10205;"Dalcahue";2033;12993;3174;0,244285384437774
 "7479";10;"Los Lagos";102;"Chiloé";10205;"Dalcahue";2034;13095;3137;0,239557082856052
 "7480";10;"Los Lagos";102;"Chiloé";10205;"Dalcahue";2035;13184;3110;0,235891990291262
@@ -7594,7 +7594,7 @@
 "7593";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2012;6524;2284;0,350091968117719
 "7594";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2013;6573;2227;0,338810284497185
 "7595";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2014;6621;2170;0,327745053617278
-"7596";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2015;6664;2119;0,317977190876351
+"7596";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2015;6664;2119;0,31797719087635
 "7597";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2016;6709;2070;0,308540766135042
 "7598";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2017;6761;2016;0,298180742493714
 "7599";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2018;6803;1974;0,290166103189769
@@ -7612,7 +7612,7 @@
 "7611";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2030;7183;1510;0,210218571627454
 "7612";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2031;7199;1484;0,206139741630782
 "7613";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2032;7216;1456;0,201773835920177
-"7614";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2033;7230;1431;0,197925311203319
+"7614";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2033;7230;1431;0,19792531120332
 "7615";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2034;7246;1404;0,193762075627933
 "7616";10;"Los Lagos";102;"Chiloé";10209;"Quemchi";2035;7259;1379;0,189971070395371
 "7617";10;"Los Lagos";102;"Chiloé";10210;"Quinchao";2002;6157;3085;0,501055708949164
@@ -7647,7 +7647,7 @@
 "7646";10;"Los Lagos";102;"Chiloé";10210;"Quinchao";2031;6585;1436;0,218071374335611
 "7647";10;"Los Lagos";102;"Chiloé";10210;"Quinchao";2032;6597;1403;0,212672426860694
 "7648";10;"Los Lagos";102;"Chiloé";10210;"Quinchao";2033;6599;1378;0,208819518108804
-"7649";10;"Los Lagos";102;"Chiloé";10210;"Quinchao";2034;6613;1348;0,203840919401179
+"7649";10;"Los Lagos";102;"Chiloé";10210;"Quinchao";2034;6613;1348;0,20384091940118
 "7650";10;"Los Lagos";102;"Chiloé";10210;"Quinchao";2035;6619;1322;0,199728055597522
 "7651";10;"Los Lagos";103;"Osorno";10301;"Osorno";2002;104289;47289;0,453441877858643
 "7652";10;"Los Lagos";103;"Osorno";10301;"Osorno";2003;105787;47202;0,446198493198597
@@ -7717,7 +7717,7 @@
 "7716";10;"Los Lagos";103;"Osorno";10302;"Puerto Octay";2033;7255;1556;0,2144727773949
 "7717";10;"Los Lagos";103;"Osorno";10302;"Puerto Octay";2034;7264;1520;0,209251101321586
 "7718";10;"Los Lagos";103;"Osorno";10302;"Puerto Octay";2035;7262;1498;0,206279261911319
-"7719";10;"Los Lagos";103;"Osorno";10303;"Purranque";2002;14619;6989;0,478076475819139
+"7719";10;"Los Lagos";103;"Osorno";10303;"Purranque";2002;14619;6989;0,47807647581914
 "7720";10;"Los Lagos";103;"Osorno";10303;"Purranque";2003;14657;6880;0,4694002865525
 "7721";10;"Los Lagos";103;"Osorno";10303;"Purranque";2004;14702;6765;0,46014147735002
 "7722";10;"Los Lagos";103;"Osorno";10303;"Purranque";2005;14751;6648;0,450681309741712
@@ -8330,7 +8330,7 @@
 "8329";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11401;"Chile Chico";2034;4269;890;0,208479737643476
 "8330";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11401;"Chile Chico";2035;4281;870;0,203223545900491
 "8331";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11402;"Río Ibáñez";2002;1797;768;0,427378964941569
-"8332";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11402;"Río Ibáñez";2003;1813;745;0,410921125206839
+"8332";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11402;"Río Ibáñez";2003;1813;745;0,41092112520684
 "8333";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11402;"Río Ibáñez";2004;1829;725;0,396391470749043
 "8334";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11402;"Río Ibáñez";2005;1846;709;0,384073672806067
 "8335";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11402;"Río Ibáñez";2006;1869;688;0,368111289459604
@@ -8353,7 +8353,7 @@
 "8352";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11402;"Río Ibáñez";2023;2244;467;0,208110516934046
 "8353";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11402;"Río Ibáñez";2024;2255;458;0,20310421286031
 "8354";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11402;"Río Ibáñez";2025;2269;445;0,196121639488762
-"8355";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11402;"Río Ibáñez";2026;2283;432;0,189224704336399
+"8355";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11402;"Río Ibáñez";2026;2283;432;0,1892247043364
 "8356";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11402;"Río Ibáñez";2027;2295;421;0,183442265795207
 "8357";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11402;"Río Ibáñez";2028;2300;416;0,180869565217391
 "8358";11;"Aysén del General Carlos Ibáñez del Campo";114;"General Carrera";11402;"Río Ibáñez";2029;2312;403;0,174307958477509
@@ -8631,7 +8631,7 @@
 "8630";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12302;"Primavera";2029;554;98;0,176895306859206
 "8631";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12302;"Primavera";2030;551;97;0,176043557168784
 "8632";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12302;"Primavera";2031;551;93;0,168784029038113
-"8633";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12302;"Primavera";2032;549;91;0,165755919854281
+"8633";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12302;"Primavera";2032;549;91;0,16575591985428
 "8634";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12302;"Primavera";2033;547;89;0,162705667276051
 "8635";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12302;"Primavera";2034;544;89;0,163602941176471
 "8636";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12302;"Primavera";2035;539;89;0,165120593692022
@@ -8652,7 +8652,7 @@
 "8651";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2016;249;39;0,156626506024096
 "8652";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2017;244;42;0,172131147540984
 "8653";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2018;244;40;0,163934426229508
-"8654";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2019;244;39;0,159836065573771
+"8654";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2019;244;39;0,15983606557377
 "8655";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2020;245;37;0,151020408163265
 "8656";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2021;243;38;0,156378600823045
 "8657";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2022;242;37;0,152892561983471
@@ -8663,7 +8663,7 @@
 "8662";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2027;236;36;0,152542372881356
 "8663";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2028;235;35;0,148936170212766
 "8664";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2029;235;34;0,14468085106383
-"8665";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2030;236;34;0,144067796610169
+"8665";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2030;236;34;0,14406779661017
 "8666";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2031;234;34;0,145299145299145
 "8667";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2032;234;32;0,136752136752137
 "8668";12;"Magallanes y de la Antártica Chilena";123;"Tierra del Fuego";12303;"Timaukel";2033;235;31;0,131914893617021
@@ -8677,7 +8677,7 @@
 "8676";12;"Magallanes y de la Antártica Chilena";124;"Última Esperanza";12401;"Natales";2007;14666;5625;0,383540160916405
 "8677";12;"Magallanes y de la Antártica Chilena";124;"Última Esperanza";12401;"Natales";2008;14920;5592;0,374798927613941
 "8678";12;"Magallanes y de la Antártica Chilena";124;"Última Esperanza";12401;"Natales";2009;15178;5559;0,366253788377915
-"8679";12;"Magallanes y de la Antártica Chilena";124;"Última Esperanza";12401;"Natales";2010;15432;5531;0,358411093831001
+"8679";12;"Magallanes y de la Antártica Chilena";124;"Última Esperanza";12401;"Natales";2010;15432;5531;0,358411093831
 "8680";12;"Magallanes y de la Antártica Chilena";124;"Última Esperanza";12401;"Natales";2011;15695;5510;0,351067218859509
 "8681";12;"Magallanes y de la Antártica Chilena";124;"Última Esperanza";12401;"Natales";2012;15963;5482;0,3434191568001
 "8682";12;"Magallanes y de la Antártica Chilena";124;"Última Esperanza";12401;"Natales";2013;16220;5444;0,335635018495684
@@ -9331,7 +9331,7 @@
 "9330";13;"Metropolitana de Santiago";131;"Santiago";13118;"Macul";2015;95538;25305;0,264868429316084
 "9331";13;"Metropolitana de Santiago";131;"Santiago";13118;"Macul";2016;96726;25061;0,259092694828691
 "9332";13;"Metropolitana de Santiago";131;"Santiago";13118;"Macul";2017;98524;24896;0,252689699971581
-"9333";13;"Metropolitana de Santiago";131;"Santiago";13118;"Macul";2018;101729;25075;0,246488218698699
+"9333";13;"Metropolitana de Santiago";131;"Santiago";13118;"Macul";2018;101729;25075;0,2464882186987
 "9334";13;"Metropolitana de Santiago";131;"Santiago";13118;"Macul";2019;105133;25334;0,240970960592773
 "9335";13;"Metropolitana de Santiago";131;"Santiago";13118;"Macul";2020;108880;25755;0,236544819985305
 "9336";13;"Metropolitana de Santiago";131;"Santiago";13118;"Macul";2021;110483;25795;0,233474833232262
@@ -9426,7 +9426,7 @@
 "9425";13;"Metropolitana de Santiago";131;"Santiago";13121;"Pedro Aguirre Cerda";2008;85541;29843;0,348873639541273
 "9426";13;"Metropolitana de Santiago";131;"Santiago";13121;"Pedro Aguirre Cerda";2009;85360;28864;0,338144329896907
 "9427";13;"Metropolitana de Santiago";131;"Santiago";13121;"Pedro Aguirre Cerda";2010;85100;27965;0,3286133960047
-"9428";13;"Metropolitana de Santiago";131;"Santiago";13121;"Pedro Aguirre Cerda";2011;84830;27124;0,319745373099139
+"9428";13;"Metropolitana de Santiago";131;"Santiago";13121;"Pedro Aguirre Cerda";2011;84830;27124;0,31974537309914
 "9429";13;"Metropolitana de Santiago";131;"Santiago";13121;"Pedro Aguirre Cerda";2012;84541;26323;0,311363717013047
 "9430";13;"Metropolitana de Santiago";131;"Santiago";13121;"Pedro Aguirre Cerda";2013;84148;25486;0,302871131815373
 "9431";13;"Metropolitana de Santiago";131;"Santiago";13121;"Pedro Aguirre Cerda";2014;83763;24718;0,295094492795148
@@ -10042,7 +10042,7 @@
 "10041";13;"Metropolitana de Santiago";134;"Maipo";13401;"San Bernardo";2012;212452;86521;0,407249637565191
 "10042";13;"Metropolitana de Santiago";134;"Maipo";13401;"San Bernardo";2013;216238;86272;0,398967803993748
 "10043";13;"Metropolitana de Santiago";134;"Maipo";13401;"San Bernardo";2014;219924;86163;0,391785344027937
-"10044";13;"Metropolitana de Santiago";134;"Maipo";13401;"San Bernardo";2015;223483;86282;0,386078583158451
+"10044";13;"Metropolitana de Santiago";134;"Maipo";13401;"San Bernardo";2015;223483;86282;0,38607858315845
 "10045";13;"Metropolitana de Santiago";134;"Maipo";13401;"San Bernardo";2016;227132;86441;0,380576052691827
 "10046";13;"Metropolitana de Santiago";134;"Maipo";13401;"San Bernardo";2017;231488;86590;0,374058266519215
 "10047";13;"Metropolitana de Santiago";134;"Maipo";13401;"San Bernardo";2018;236812;86603;0,365703596101549
@@ -10212,11 +10212,11 @@
 "10211";13;"Metropolitana de Santiago";135;"Melipilla";13502;"Alhué";2012;4559;1590;0,348760693134459
 "10212";13;"Metropolitana de Santiago";135;"Melipilla";13502;"Alhué";2013;4693;1585;0,337737055188579
 "10213";13;"Metropolitana de Santiago";135;"Melipilla";13502;"Alhué";2014;4825;1590;0,329533678756477
-"10214";13;"Metropolitana de Santiago";135;"Melipilla";13502;"Alhué";2015;4959;1594;0,321435773341399
+"10214";13;"Metropolitana de Santiago";135;"Melipilla";13502;"Alhué";2015;4959;1594;0,3214357733414
 "10215";13;"Metropolitana de Santiago";135;"Melipilla";13502;"Alhué";2016;5090;1598;0,313948919449902
 "10216";13;"Metropolitana de Santiago";135;"Melipilla";13502;"Alhué";2017;5232;1603;0,30638379204893
 "10217";13;"Metropolitana de Santiago";135;"Melipilla";13502;"Alhué";2018;5408;1614;0,29844674556213
-"10218";13;"Metropolitana de Santiago";135;"Melipilla";13502;"Alhué";2019;5582;1632;0,292368326764601
+"10218";13;"Metropolitana de Santiago";135;"Melipilla";13502;"Alhué";2019;5582;1632;0,2923683267646
 "10219";13;"Metropolitana de Santiago";135;"Melipilla";13502;"Alhué";2020;5751;1654;0,287602156146757
 "10220";13;"Metropolitana de Santiago";135;"Melipilla";13502;"Alhué";2021;5870;1666;0,28381601362862
 "10221";13;"Metropolitana de Santiago";135;"Melipilla";13502;"Alhué";2022;5971;1678;0,281024953944063
@@ -10258,7 +10258,7 @@
 "10257";13;"Metropolitana de Santiago";135;"Melipilla";13503;"Curacaví";2024;29567;8800;0,297629113538742
 "10258";13;"Metropolitana de Santiago";135;"Melipilla";13503;"Curacaví";2025;29961;8842;0,295116985414372
 "10259";13;"Metropolitana de Santiago";135;"Melipilla";13503;"Curacaví";2026;30362;8860;0,291812133588038
-"10260";13;"Metropolitana de Santiago";135;"Melipilla";13503;"Curacaví";2027;30750;8862;0,288195121951219
+"10260";13;"Metropolitana de Santiago";135;"Melipilla";13503;"Curacaví";2027;30750;8862;0,28819512195122
 "10261";13;"Metropolitana de Santiago";135;"Melipilla";13503;"Curacaví";2028;31138;8852;0,284282869805382
 "10262";13;"Metropolitana de Santiago";135;"Melipilla";13503;"Curacaví";2029;31520;8836;0,280329949238579
 "10263";13;"Metropolitana de Santiago";135;"Melipilla";13503;"Curacaví";2030;31882;8813;0,276425569286745
@@ -10471,7 +10471,7 @@
 "10470";13;"Metropolitana de Santiago";136;"Talagante";13604;"Padre Hurtado";2033;74429;22465;0,301831275443711
 "10471";13;"Metropolitana de Santiago";136;"Talagante";13604;"Padre Hurtado";2034;75800;22581;0,297902374670185
 "10472";13;"Metropolitana de Santiago";136;"Talagante";13604;"Padre Hurtado";2035;77092;22727;0,294803611269652
-"10473";13;"Metropolitana de Santiago";136;"Talagante";13605;"Peñaflor";2002;46062;22899;0,497134297251531
+"10473";13;"Metropolitana de Santiago";136;"Talagante";13605;"Peñaflor";2002;46062;22899;0,49713429725153
 "10474";13;"Metropolitana de Santiago";136;"Talagante";13605;"Peñaflor";2003;47815;23268;0,48662553591969
 "10475";13;"Metropolitana de Santiago";136;"Talagante";13605;"Peñaflor";2004;49506;23552;0,475740314305337
 "10476";13;"Metropolitana de Santiago";136;"Talagante";13605;"Peñaflor";2005;51189;23743;0,463830119752291
@@ -10504,7 +10504,7 @@
 "10503";13;"Metropolitana de Santiago";136;"Talagante";13605;"Peñaflor";2032;89339;26673;0,2985594197383
 "10504";13;"Metropolitana de Santiago";136;"Talagante";13605;"Peñaflor";2033;90386;26559;0,293839753944195
 "10505";13;"Metropolitana de Santiago";136;"Talagante";13605;"Peñaflor";2034;91354;26457;0,289609650371084
-"10506";13;"Metropolitana de Santiago";136;"Talagante";13605;"Peñaflor";2035;92220;26395;0,286217740186511
+"10506";13;"Metropolitana de Santiago";136;"Talagante";13605;"Peñaflor";2035;92220;26395;0,28621774018651
 "10507";14;"Los Ríos";141;"Valdivia";14101;"Valdivia";2002;102589;44262;0,431449765569408
 "10508";14;"Los Ríos";141;"Valdivia";14101;"Valdivia";2003;104388;44020;0,421695980380887
 "10509";14;"Los Ríos";141;"Valdivia";14101;"Valdivia";2004;106215;43673;0,41117544602928
@@ -10530,7 +10530,7 @@
 "10529";14;"Los Ríos";141;"Valdivia";14101;"Valdivia";2024;144366;37720;0,261280356870731
 "10530";14;"Los Ríos";141;"Valdivia";14101;"Valdivia";2025;145706;37581;0,257923489767065
 "10531";14;"Los Ríos";141;"Valdivia";14101;"Valdivia";2026;147056;37384;0,254216080948754
-"10532";14;"Los Ríos";141;"Valdivia";14101;"Valdivia";2027;148457;37093;0,249856860909219
+"10532";14;"Los Ríos";141;"Valdivia";14101;"Valdivia";2027;148457;37093;0,24985686090922
 "10533";14;"Los Ríos";141;"Valdivia";14101;"Valdivia";2028;149886;36730;0,245052906875892
 "10534";14;"Los Ríos";141;"Valdivia";14101;"Valdivia";2029;151249;36388;0,240583408815926
 "10535";14;"Los Ríos";141;"Valdivia";14101;"Valdivia";2030;152539;36070;0,236464117373262
@@ -10643,7 +10643,7 @@
 "10642";14;"Los Ríos";141;"Valdivia";14104;"Los Lagos";2035;16309;4015;0,246183089091912
 "10643";14;"Los Ríos";141;"Valdivia";14105;"Máfil";2002;4843;2566;0,529836877968202
 "10644";14;"Los Ríos";141;"Valdivia";14105;"Máfil";2003;4865;2520;0,517985611510791
-"10645";14;"Los Ríos";141;"Valdivia";14105;"Máfil";2004;4886;2475;0,506549324600901
+"10645";14;"Los Ríos";141;"Valdivia";14105;"Máfil";2004;4886;2475;0,5065493246009
 "10646";14;"Los Ríos";141;"Valdivia";14105;"Máfil";2005;4923;2419;0,491367052610197
 "10647";14;"Los Ríos";141;"Valdivia";14105;"Máfil";2006;4962;2365;0,476622329705764
 "10648";14;"Los Ríos";141;"Valdivia";14105;"Máfil";2007;5011;2306;0,460187587307923
@@ -10766,7 +10766,7 @@
 "10765";14;"Los Ríos";141;"Valdivia";14108;"Panguipulli";2022;27582;8548;0,309912261619897
 "10766";14;"Los Ríos";141;"Valdivia";14108;"Panguipulli";2023;27722;8456;0,305028497222423
 "10767";14;"Los Ríos";141;"Valdivia";14108;"Panguipulli";2024;27852;8368;0,300445210397817
-"10768";14;"Los Ríos";141;"Valdivia";14108;"Panguipulli";2025;27988;8266;0,295340860368729
+"10768";14;"Los Ríos";141;"Valdivia";14108;"Panguipulli";2025;27988;8266;0,29534086036873
 "10769";14;"Los Ríos";141;"Valdivia";14108;"Panguipulli";2026;28123;8156;0,290011734167763
 "10770";14;"Los Ríos";141;"Valdivia";14108;"Panguipulli";2027;28259;8037;0,284404968328674
 "10771";14;"Los Ríos";141;"Valdivia";14108;"Panguipulli";2028;28403;7902;0,278210048234341
@@ -11470,7 +11470,7 @@
 "11469";16;"Ñuble";162;"Itata";16204;"Ninhue";2012;4191;1334;0,318301121450728
 "11470";16;"Ñuble";162;"Itata";16204;"Ninhue";2013;4205;1295;0,307966706302021
 "11471";16;"Ñuble";162;"Itata";16204;"Ninhue";2014;4230;1249;0,295271867612293
-"11472";16;"Ñuble";162;"Itata";16204;"Ninhue";2015;4248;1214;0,285781544256121
+"11472";16;"Ñuble";162;"Itata";16204;"Ninhue";2015;4248;1214;0,28578154425612
 "11473";16;"Ñuble";162;"Itata";16204;"Ninhue";2016;4271;1176;0,275345352376493
 "11474";16;"Ñuble";162;"Itata";16204;"Ninhue";2017;4295;1142;0,265890570430733
 "11475";16;"Ñuble";162;"Itata";16204;"Ninhue";2018;4317;1112;0,257586286773222
@@ -11603,7 +11603,7 @@
 "11602";16;"Ñuble";163;"Punilla";16301;"San Carlos";2009;38207;14899;0,389954720339205
 "11603";16;"Ñuble";163;"Punilla";16301;"San Carlos";2010;38740;14622;0,377439339184306
 "11604";16;"Ñuble";163;"Punilla";16301;"San Carlos";2011;39256;14384;0,366415325045853
-"11605";16;"Ñuble";163;"Punilla";16301;"San Carlos";2012;39775;14127;0,355172847265871
+"11605";16;"Ñuble";163;"Punilla";16301;"San Carlos";2012;39775;14127;0,35517284726587
 "11606";16;"Ñuble";163;"Punilla";16301;"San Carlos";2013;40270;13860;0,344176806555749
 "11607";16;"Ñuble";163;"Punilla";16301;"San Carlos";2014;40759;13629;0,334380136902279
 "11608";16;"Ñuble";163;"Punilla";16301;"San Carlos";2015;41228;13439;0,325967788881343

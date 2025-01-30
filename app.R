@@ -11,6 +11,9 @@ library(bslib)
 library(glue)
 library(colorspace)
 
+# library(reactlog)
+# reactlog::reactlog_enable()
+
 color_principal = "#365c8d"
 color_destacado = "#3a87c8"
 color_fondo = "#FFFFFF"
@@ -19,9 +22,9 @@ color_masculino = "#964191" #"#770072" |> lighten(0.2)
 color_femenino = "#5B4898" #"#3a1582" |> lighten(0.2)
 
 
-proyecciones <- arrow::read_parquet("datos_procesados/censo_proyecciones_año.parquet")
+proyecciones <- arrow::read_parquet("datos/datos_procesados/censo_proyecciones_año.parquet")
 
-proyecciones_edad <- arrow::read_parquet("datos_procesados/censo_proyecciones_año_edad_genero.parquet")
+proyecciones_edad <- arrow::read_parquet("datos/datos_procesados/censo_proyecciones_año_edad_genero.parquet")
 
 options(spinner.type = 4, spinner.color = color_destacado)
 
@@ -241,7 +244,7 @@ ui <- fluidPage(
         column(12, style = "opacity: 1; font-size: 80%;",
                hr(),
                
-               markdown("Diseñado y programado por [Bastián Olea Herrera.](https://bastian.olea.biz)"),
+               markdown("Diseñado y programado por [Bastián Olea Herrera.](https://bastianolea.rbind.io)"),
                
                markdown("Puedes explorar mis otras [aplicaciones interactivas sobre datos sociales en mi portafolio.](https://bastianolea.github.io/shiny_apps/)"),
                
