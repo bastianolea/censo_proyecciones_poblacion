@@ -6,6 +6,8 @@
 El script `importar_poblacion_proyecciones.R` descarga directamente el archivo Excel con las proyecciones oficiales desde el INE, para usarlo en este proyecto.
 
 ## Datos
+Descarga los datos de proyecciones de población por comuna y año, de 2002 a 2035, [en formato `.csv` en este enlace](https://github.com/bastianolea/censo_proyecciones_poblacion/raw/main/datos/datos_procesados/censo_proyecciones_año.csv).
+
 En la carpeta `datos_procesados` se encuentran tablas de datos procesados en base a las proyecciones oficiales, incluyendo:
 
 - `censo_proyecciones_año.csv`: (11 mil filas) proyecciones de población para todas las comunas del país, por año de proyección (de 2002 a 2035)
