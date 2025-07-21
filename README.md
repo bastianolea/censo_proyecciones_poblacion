@@ -1,9 +1,9 @@
 
-# Visualizador de proyecciones de población del Censo, Chile
+# Proyecciones de población del Censo
 
 [Aplicación web](https://bastianoleah.shinyapps.io/censo_proyecciones/) que visualiza los datos oficiales del [Instituto Nacional de Estadísticas](https://www.ine.gob.cl) de Chile sobre [proyecciones de población](https://www.ine.gob.cl/estadisticas/sociales/demografia-y-vitales/proyecciones-de-poblacion); es decir, estimaciones del crecimiento poblacional hacia el futuro, a partir de los datos obtenidos en los censos oficiales.
 
-El script `importar_opblacion_proyecciones.R` descarga directamente el archivo Excel con las proyecciones oficiales desde el INE, para usarlo en este proyecto.
+El script `importar_poblacion_proyecciones.R` descarga directamente el archivo Excel con las proyecciones oficiales desde el INE, para usarlo en este proyecto.
 
 ## Datos
 En la carpeta `datos_procesados` se encuentran tablas de datos procesados en base a las proyecciones oficiales, incluyendo:

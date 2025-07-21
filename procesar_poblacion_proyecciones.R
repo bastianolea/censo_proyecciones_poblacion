@@ -26,6 +26,8 @@ proyecciones_año <- proyecciones_long |>
 proyecciones_año
 
 ## guardar ----
+dir.create("datos/datos_procesados/")
+
 proyecciones_año |> 
     arrow::write_parquet("datos/datos_procesados/censo_proyecciones_año.parquet")
 
