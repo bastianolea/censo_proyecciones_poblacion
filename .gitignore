@@ -4,7 +4,8 @@
 .Ruserdata
 .dta
 .zip
-.xlsx
+!datos/datos_originales/censo_proyecciones_poblacion.xlsx 
+!datos/datos_originales/*
 .Rdata
 .httr-oauth
 .DS_Store
